@@ -33,7 +33,7 @@ const lengthParagraph = paragraphArray.length;
        } else {
           resultArray = wordArray.slice(0,amountWord).join(' ');
        }
-        resultArray.push(wordArray.slice(z*amountWord).join(" "));
+        resultArray.push(wordArray.slice((z-1)*amountWord).join(" "));
         console.log('resultArray',resultArray);
         for(let b=0; b<resultArray.length; b++) {
             console.log(`${resultArray[b]}`);
