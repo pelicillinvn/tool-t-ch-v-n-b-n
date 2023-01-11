@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("bg1.jpg");
+}
+
+#main {
+    margin-top: 60px;
+}
+
+#name_tool {
+    font-size: 50px;
+    margin: auto;
+    color: #2A95BF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#amount_word {
+    height: 30px;
+    width: 170px;
+}
+
+#inputText {
+    font-size: 16px;
+}
+
+#button_submit {
+
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#button_submit:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+
+
+
+
+#text1 {
+    color: black;
+    padding: 20px 0px 20px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
