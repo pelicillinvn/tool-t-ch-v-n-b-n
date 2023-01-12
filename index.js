@@ -4,7 +4,7 @@
 //document.getElementById("result").innerHTML = myArray[0];
 const buttonSubmit= document.getElementById('button_submit');
 buttonSubmit.onclick = function() {
-const paragraphText = document.getElementById('input_text').value;
+const paragraphText = document.getElementById('input_text').value.trim();
 const amountWord = document.getElementById("amount_word").value;
 console.log(amountWord )
 console.log(paragraphText)
@@ -33,7 +33,9 @@ const lengthParagraph = paragraphArray.length;
        } else {
           resultArray = wordArray.slice(0,amountWord).join(' ');
        }
-        resultArray.push(wordArray.slice((z-1)*amountWord).join(" "));
+       const lastResult = wordArray.slice((z-1)*amountWord).join(" ");
+       console.log("lastResult", lastResult)
+        resultArray.push(lastResult);
         console.log('resultArray',resultArray);
         for(let b=0; b<resultArray.length; b++) {
             console.log(`${resultArray[b]}`);
