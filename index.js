@@ -39,13 +39,14 @@ console.log(paragraphArray);
                   resultArray.push(resultSentence); 
                   //console.log("resultArrayfor",resultArray);
               }
+              const lastResult = wordArray.slice((z-1)*amountWord).join(" ");
+              //console.log("lastResult", lastResult)
+               resultArray.push(lastResult);
            } else {
-            resultArray.push(wordArray.join(' ')); 
-
-           }
-           const lastResult = wordArray.slice((z-1)*amountWord).join(" ");
-           //console.log("lastResult", lastResult)
-            resultArray.push(lastResult);
+            
+               
+               resultArray.push(wordArray.join(' ')); 
+        }
        }
         console.log('resultArray',resultArray);
         for(let b=0; b<resultArray.length; b++) {
